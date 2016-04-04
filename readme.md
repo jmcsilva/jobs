@@ -15,7 +15,7 @@ Style Atlas is hiring. Are you the perfect fit?
   * Where: Sydney
   * When: now!
 
-## Style Atlas
+## About Style Atlas
 
 Style Atlas is the startup providing a fashion fitting solution for online shoppers. It allows shoppers to know if the clothing on their favourite fashion e-commerce sites will fit them, prior to purchase.
 
