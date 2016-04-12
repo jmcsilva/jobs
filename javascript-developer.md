@@ -1,5 +1,3 @@
-<img src="assets/SA-logo-web_100-black-v2.png" width="200">
-
 # Job Ad
 * What: javascript developer with 2-4 years experience
 * Where: in Sydney
