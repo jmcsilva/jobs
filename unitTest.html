@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<body>
+<script>
+
+var results = {
+        total: 0,
+        ok: 0
+    };
+function test(values, expectedResult) {
+ 
+	results.total++;
+	if(validCandidate(values) == expectedResult)
+		results.ok++;
+}
+
+function validCandidate(languages) {
+  let validCandidate = false
+  let languageRegex  = /^ES|script$/;
+  if(Array.isArray(languages)) {
+	validCandidate = !!languages.filter( function(lang) { return languageRegex.test(lang) }).length
+  } else if (typeof languages == 'string') {
+    validCandidate = languageRegex.test(languages)
+  }
+  return validCandidate
+}
+
+test(1, true);
+test(['C#','C++'], false);
+test(['ES2016','PHP'], true);
+test(['JAVA','C#'], false);
+
+console.log("Unit Test Results - Total = "	+results.total+ ", OK = "+results.ok+ ", NOTOK = "+(results.total - results.ok));
+</script>

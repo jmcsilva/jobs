@@ -1,0 +1,23 @@
+
+- What does validCandidate expect and return?
+	Expects a string or an array of strings and returns a boolean.
+
+- Tell us the reason(s) why we've created a variable to store the regex?
+	To validate if the string(s) inserted on the function parameter 'languages' ends with the string "script".
+
+- Does it matter to use == or === when checking if typeof languages is equal to 'string' ?
+	On this case, since it is using the typeof, there is no need to use ===, that makes an identity comparison on the data type.
+
+- Rewrite filter so it doesn't use =>. What does => do? Was it necessary in this instance?
+	validCandidate = !!languages.filter( function(lang) { return languageRegex.test(lang) }).length 
+  
+	=> replaces the function declaration (eg: function(value){...}), shorter syntax. 
+  
+	Can be easier to read. 
+
+- Update validCandidate to accept candidate knowing "ES2015", "ES6" or "ES7". Basically ES whatever. By the way, what does "ES" stand for?
+	let languageRegex  = /^ES|script$/;	
+	ES - ECSMAScript
+
+- Nice to have: write validCandidate unit tests.
+	unitTest.html
